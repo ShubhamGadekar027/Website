@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* custom colors  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --bgmidsection: #f9fbff;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-text-color: #333333;
+  /* --bgcolor: #f1f5fd; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #333333;
+}
+
+/* --------------------------------- Navbar styling  ---------------------------------------------*/
+.navbar-bg{
+  background-color: var(--bgmidsection);
+  padding: 2rem 0;
+  z-index: 99;
+  position: relative;
+}
+.navbar-brand{
+  font-size: 2.5rem;
+}
+.nav-item{
+  padding-right: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: lighter;
+  position: relative;
+}
+.nav-item:hover{
+  color: var(--primary-color) !important;
+  text-shadow: 0 0.1rem 0.2rem rgba(193, 92, 233, 0.1) ;
+}
+.btn-style{
+  width: 10rem;
+  height: 4rem;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.btn-style:hover{
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.4rem rgba(193, 92, 233, 0.5);
+}
+
+/* --------------------------------- Middle Section styling  ---------------------------------------------*/
+header{
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-hero-container{
+  height: 80vh;
+  display:flex;
+  /* background-color: #828286; */
+}
+
+.main-hero-container h1{
+  font-weight: bolder;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.main-hero-para{
+  font-size: 1.3rem;
+  font-weight: lighter;
+  /* color: var(--text-color); */
+  width: 80%;
+  padding-top: 2rem;
+}
+
+.main-hero-container h3{
+  font-size: 1.3rem;
+  font-weight: lighter;
+  padding-top: 2rem;
+}
+
+.main-images img{
+  /* width: 60%;
+  height: 75%; */
+  /* horizontal,vertical,blurring,opacity */
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  position: absolute;
+}
+
+.input-group{
+  position: relative;
+}
+
+.form-control-text{
+  position: absolute;
+  height: 4rem;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  /* padding: 2rem 0 2rem 0; */
+  padding-left: 1.5rem !important;
+}
+
+.input-group-button{
+  position: absolute;
+  right: 30%;
+  color:#fff;
+  top: 0.5rem;
+  background-color: var(--primary-color);
+  height: 3rem;
+  width:15%;
+  text-align: center;
+  border-radius: 2rem !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.6rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/* --------------------------------- Work Section styling  ---------------------------------------------*/
+
+.work-container{
+  padding: 4rem;
+  background-color: #fff;
+  margin-top: -7rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.main-heading{
+  font-weight: bolder;
+  /* font-size: 3rem; */
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-container .work-container-subdiv{
+  padding: 0 2rem;
+}
+
+.sub-heading{
+  font-weight: normal;
+  /* font-size: 3rem; */
+}
+
+.heading-desc{
+  padding-top: 1.2rem;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.fontawesome-style{
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  /* padding-bottom: 1.2rem; */
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50rem;
+  background-color: var(--bgcolor);
+  display: grid;
+  place-items: center;
+  margin: 2rem auto;
+}
+/* --------------------------------- Our services Section styling  ---------------------------------------------*/
+
+.our-services img{
+  width: 60%;
+  height: 80%;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+}
+
+.our-services .mini-title{
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 1.5rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.our-services .main-heading{
+  font-weight: bolder;
+}
+
+.our-services-info{
+  margin-top: 2rem;
+}
+
+.our-services-info .our-services-number{
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+
+}
+
+.our-services-info .main-hero-para{
+  padding-top: 0.6rem;
+}
+/* --------------------------------- Second part of about us section ---------------------------------------------*/ 
+.our-services-rightside{
+  padding-top: 5rem;
+}
+
+.our-services-rightside-content{
+  padding-left: 8rem;
+}
+
+.our-services-rightside img{
+  width: 60%;
+  height: 80%;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  
+}
+
+.our-services-rightside .mini-title{
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 1.5rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+/* --------------------------------- Payment/Services section ---------------------------------------------*/ 
+
+.service-main-container{
+  margin-top: 0.2rem;
+  padding: 3rem ;
+}
+
+.service-main-container .main-heading{
+  /* margin: 3rem 0; */
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.service-main-container .work-container-subdiv{
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.service-main-container .work-container-subdiv .fontawesome-style{
+  text-align: left;
+  margin: 2rem 2rem;
+}
+
+.service-main-container .sub-heading{
+  margin-left: 2rem;
+}
+
+.service-main-container .work-container-subdiv .main-hero-para{
+  font-size: 1.3rem;
+  font-weight: lighter;
+  width: 80%;
+  padding: 2rem 2rem;
+}
+
+.service-main-container .work-container-subdiv .main-hero-para{
+  width : 100%;
+}
+
+.service-main-container .work-container-subdiv:hover > .fontawesome-style{
+  background-color: #fff;
+}
+
+.service-main-container .work-container-subdiv:hover{
+  background-color: var(--bgcolor);
+}
+
+
+@media (min-width: 1400px) {
+  .service-container .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-container .col-lg-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: 2.5rem auto;
+  }
+}
+/* --------------------------------- Contact Us section ---------------------------------------------*/ 
+
+.contactus-section {
+  margin: 6rem 0;
+}
+
+.contact-leftside img {
+  min-width: 80%;
+  max-height: 30rem;
+  height: auto;
+  margin-top: 3rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.contact-input-feild {
+  margin-bottom: 3rem;
+}
+
+.contact-rightside form .form-control {
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  height: 5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  font-weight: lighter;
+}
+
+.contact-rightside form .form-check-input {
+  width: 2rem;
+  height: 2rem;
+}
+
+.form-checkbox-style {
+  margin: 4rem 0;
+}
+
+.contact-rightside form .main-hero-para {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: lighter;
+  width: 75%;
+  padding: 0 2rem;
+}
+
+/* --------------------------------- Footer section ---------------------------------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------- responsive media queries  -------------------------------------------------------*/
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
+  }
+}                          
